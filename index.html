@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/play_store_512.png" type="image/x-icon">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Dark and Light mode Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="mode">
+            <i class="material-icons black">mode_night</i>
+        </div>
+        <div class="result">
+            <input type="text" name="text" class="result_display" disabled id="result" placeholder="0">
+            <input type="text" name="text" id="calculate" disabled class="result_calculate blue" placeholder="0">
+        </div>
+
+        <div class="buttons">
+            <input type="button" class="blue" value="AC" id="clear">
+            <input type="button" class="btn" value="+/-" id="opp">
+            <input type="button" class="btn" value="%" onclick="insert(' % ')">
+            <input type="button" class="grey" value="&#xF7;" onclick="insert(' / ')">
+            <input type="button" class="btn" value="7" onclick="insert('7')">
+            <input type="button" class="btn" value="8" onclick="insert('8')">
+            <input type="button" class="btn" value="9" onclick="insert('9')">
+            <input type="button" class="grey" value="&#215;" onclick="insert(' * ')">
+            <input type="button" class="btn" value="4" onclick="insert('4')">
+            <input type="button" class="btn" value="5" onclick="insert('5')">
+            <input type="button" class="btn" value="6" onclick="insert('6')">
+            <input type="button" class="grey" value="-" onclick="insert(' - ')">
+            <input type="button" class="btn" value="1" onclick="insert('1')">
+            <input type="button" class="btn" value="2" onclick="insert('2')">
+            <input type="button" class="btn" value="3" onclick="insert('3')">
+            <input type="button" class="grey" value="+" onclick="insert(' + ')">
+            <input type="button" class="btn" value="0" onclick="insert('0')">
+            <input type="button" class="btn" value="." onclick="insert('.')">
+            <input type="button" class="disabled">
+            <input type="button" class="button btnBg" value="=" id="equal">
+        </div>
+    </div>
+   
+
+    <!-- js file -->
+    <script src="app.js"></script>
+</body>
+</html>
